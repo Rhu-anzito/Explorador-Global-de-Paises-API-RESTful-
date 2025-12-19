@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color:grey;
+    padding: 20px 0;
+
+}
+
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a8a
+}
+
+.controls {
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+#search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 10px 0;
+
+}
+
+.country-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow-y: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor:pointer;
+
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+
+}
+
+.country-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 15px;
+
+}
+
+.card-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+
+}
+
+.card-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+}
+
+.hidden {
+    display: none;
+
+}
+
+#loading-message, #error-message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #555;
+}
