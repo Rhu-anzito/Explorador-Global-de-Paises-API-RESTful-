@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de paises (API)</title>
+    <link rel="stylesheet" href="projet2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Explorador Global de países</h1>
+
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="pesquisar país por nome..." onkeyup="filterCountries()">   
+        </div>
+        <p id="loading-message">Carregando dados...</p>
+        <p id="error-message" class="hidden">Ocorreu um erro ao carregar os dados</p>
+    </div>
+    <div id="countries-container" class="countries-container"></div>
+
+    <script src="projet2.js"></script>
+</body>
+</html>
